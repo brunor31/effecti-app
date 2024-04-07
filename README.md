@@ -1,39 +1,36 @@
-# effecti-app
+SPA desenvolvida para o teste técnico da empresa effecti
 
-This template should help get you started developing with Vue 3 in Vite.
+Para buildar o projeto basta rodar o comando na raiz do projeto pelo terminal ou IDE (necessário docker instalado):
 
-## Recommended IDE Setup
+```bash
+docker-compose up -d
+```
+Para acessar a aplicação é necessário estar com o backend rodando, [Acesse o projeto](https://github.com/brunor31/effecti-api)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Após subir a aplicação, é necessário entrar no container e instalar a dependências, basta seguir os comando abaixo.
 
-## Type Support for `.vue` Imports in TS
+Para acessar o container (obs: pode usar o docker desktop clicando no container e entrando na aba exec):
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+```bash
+docker exec -it app bash
+```
 
-## Customize configuration
+Dentro do container basta rodar o comando para instalar as dependências
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Após instalar as dependencias basta rodar a aplicação: 
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+A aplicação vai startar na porta 8080.
 
-```sh
-npm run build
+```bash
+http://localhost:8080
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
+Para acessar a aplicação basta criar um usuário, ou logar com um e-mail e senha previamente cadastrado na api.

@@ -1,3 +1,3 @@
- FROM node:20lts
+ FROM node:20
 
  WORKDIR /usr/app
