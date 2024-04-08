@@ -1,5 +1,6 @@
 import type { Item } from './Item';
 import type { Word } from './Word';
+import type { Attachment } from './Attachment';
 
 export interface Bidding{
     id: number,
